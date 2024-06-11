@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Maternal Health Risk Prediction Model</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"></link>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     </head>
 
     <body>
-        <h1 class="text-center">Maternal Health Risk Prediction Model</h1>
+        <div class="login">
+            <h1>Maternal Health Risk Prediction</h1>
 
-        <form class-"text-center" action='/' method="post">
-            <input class="form-control" name="age">
-            <input class="btn btn-primary mt-3" type="submit" value="Predict Risk">
-        </form>
+            <form>
+                <input type="text" name="Age" placeholder="Enter Your Age" required="required"/>
+                <input type="text" name="SystolicBP" placeholder="Enter Your Systolic Blood Pressure" required="required"/>
+                <input type="text" name="DiastolicBP" placeholder="Enter Your Diastolic Blood Pressure" required="required"/>
+                <input type="text" name="BS" placeholder="Enter Your blood glucose levels is in terms of a molar concentration (mmol/L)" required="required"/>
+                <input type="text" name="BodyTemp" placeholder="Enter Your body temp in degrees farenheit" required="required"/>
+                <input type="text" name="HeartRate" placeholder="Enter your heart rate in bpm" required="required"/>
+
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            </form>
+
+            <br>
+            <br>
+            {{ prediction_text }}
+
+        </div>
+
     </body>
 </html>

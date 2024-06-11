@@ -42,7 +42,7 @@ rfc.fit(X_train, y_train)
 print(rfc.score(X_test, y_test))
 
 # %%
-pickle.dump(rfc, open("regression.pkl", "wb"))
+pickle.dump(rfc, open("model.pkl", "wb"))
 
 
 
