@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import pickle
 
 # %%
 df = pd.read_csv('./data/Maternal_Health_Risk_Data_Set.csv')
@@ -41,6 +42,8 @@ rfc.fit(X_train, y_train)
 print(rfc.score(X_test, y_test))
 
 # %%
+pickle.dump(rfc, open("regression.pkl", "wb"))
 
 
 
+# %%
