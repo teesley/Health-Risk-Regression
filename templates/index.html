@@ -4,13 +4,16 @@
         <meta charset="UTF-8">
         <title>Maternal Health Risk Prediction Model</title>
         <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     </head>
 
     <body>
         <div class="login">
             <h1>Maternal Health Risk Prediction</h1>
 
-            <form>
+            <form action="{{ url_for('predict')}}"method="post">
                 <input type="text" name="Age" placeholder="Enter Your Age" required="required"/>
                 <input type="text" name="SystolicBP" placeholder="Enter Your Systolic Blood Pressure" required="required"/>
                 <input type="text" name="DiastolicBP" placeholder="Enter Your Diastolic Blood Pressure" required="required"/>

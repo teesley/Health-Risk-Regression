@@ -1,22 +1,20 @@
 import numpy as np
-from flask import Flask, render_template
-from flask import request
+from flask import Flask, request, jsonify, render_template
 import pickle
 
 app = Flask(__name__)
 
 model = pickle.load(open("model.pkl", "rb"))
 
-@app.route("/")
-def home():
+@app.route("/") 
+def Home():
     return render_template("index.html")
 
 @app.route("/predict", methods = ["POST"])
 def predict():
-    x_features = [int(x) for x in request.form.values()]
+    x_features = [float(x) for x in request.form.values()]
     features = [np.array(x_features)]
     prediction = model.predict(features)
-    
     return render_template("index.html", prediction_text = "Maternal Health risk is {}".format(prediction))
 
 if __name__ == '__main__':
