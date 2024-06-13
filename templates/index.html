@@ -3,28 +3,38 @@
     <head>
         <meta charset="UTF-8">
         <title>Maternal Health Risk Prediction Model</title>
-        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <!--link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css')}}">
     </head>
 
     <body>
-        <div class="login">
+        <div class="main">
             <h1>Maternal Health Risk Prediction</h1>
 
             <form action="{{ url_for('predict')}}"method="post">
-                <input type="text" name="Age" placeholder="Enter Your Age" required="required"/>
-                <input type="text" name="SystolicBP" placeholder="Enter Your Systolic Blood Pressure" required="required"/>
-                <input type="text" name="DiastolicBP" placeholder="Enter Your Diastolic Blood Pressure" required="required"/>
-                <input type="text" name="BS" placeholder="Enter Your blood glucose levels is in terms of a molar concentration (mmol/L)" required="required"/>
-                <input type="text" name="BodyTemp" placeholder="Enter Your body temp in degrees farenheit" required="required"/>
-                <input type="text" name="HeartRate" placeholder="Enter your heart rate in bpm" required="required"/>
+                <input class="form" type="text" name="Age" placeholder=" Enter Your Age" required="required"/>
+                <br>
+                <br>
+                <input class="form" type="text" name="SystolicBP" placeholder=" Enter Your Systolic Blood Pressure" required="required"/>
+                <br>
+                <br>
+                <input class="form" type="text" name="DiastolicBP" placeholder=" Enter Your Diastolic Blood Pressure" required="required"/>
+                <br>
+                <br>
+                <input class="form" type="text" name="BS" placeholder=" Enter Your blood glucose level (mmol/L)" required="required"/>
+                <br>
+                <br>
+                <input class="form" type="text" name="BodyTemp" placeholder=" Enter Your body temp (°F)" required="required"/>
+                <br>
+                <br>
+                <input class="form" type="text" name="HeartRate" placeholder=" Enter your heart rate (bpm)" required="required"/>
+                
+                <br>
+                <br>
 
                 <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
             </form>
 
-            <br>
             <br>
             {{ prediction_text }}
 
