@@ -5,11 +5,19 @@
         <title>Maternal Health Risk Prediction Model</title>
         <!--link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' -->
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css')}}">
+
     </head>
 
     <body>
+        <div class="navbar">
+            <ul>
+                <li class="active"><a href="">Home</a></li>
+                <li class="active"><a href="/data">Data Details</a></li>
+                <li class="active"><a href="/model">Model Details</a></li>
+              </ul>
+        </div>
         <div class="main">
-            <h1>Maternal Health Risk Prediction</h1>
+            <h3>Enter Your Information</h3>
 
             <form action="{{ url_for('predict')}}"method="post">
                 <input class="form" type="text" name="Age" placeholder=" Enter Your Age" required="required"/>
@@ -32,7 +40,7 @@
                 <br>
                 <br>
 
-                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+                <button type="submit" class="button">Predict</button>
             </form>
 
             <br>

@@ -12,11 +12,14 @@ body {
 .main {
     margin-top: 180px;
     text-align: center;
+    font-family: 'Open sans', sans-serif;
+    font-weight: bolder;
+    color: black;
 }
 
-.main h1 {
-    padding-bottom: 50px;
-    color: #A8A9AD;
+.main h3 {
+    padding-bottom: 20px;
+    color: black;
 }
 
 .form {
@@ -27,15 +30,46 @@ body {
     font-weight: bolder;
 }
 
+::placeholder {
+    color: #CCCCCC;
+    font-family: 'Open sans', sans-serif;
+}
+
 input {
     padding: 10px;
 }
 
-.btn btn-primary btn-block btn-large {
-    color: #B3E2A7;
+button {
+    background-color: rgb(45, 91, 136);
+    width: 100px;
+    color:#CCCCCC;
+    font-family: 'Open sans', sans-serif;
+    font-weight: bolder;
 }
 
-::placeholder {
-    color: #CCCCCC;
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #A8A9AD;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: rgb(45, 91, 136);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
     font-family: 'Open sans', sans-serif;
+    font-weight: bolder;
+}
+
+li a:hover {
+    background-color: #CCCCCC;
 }
