@@ -1,9 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <meta charset="UTF-8">
+        <title>Maternal Health Risk Prediction Model</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css')}}">   
     </head>
 
     <body>
-        <h3>Check if this works!</h3>
+        <div class="navbar">
+            <ul class="navli">
+                <li class="active"><a href="http://127.0.0.1:5000/">Home</a></li>
+                <li class="active"><a href="/data">Data Details</a></li>
+                <li class="active"><a href="/model">Model Details</a></li>
+              </ul>
+        </div>
+        <div>
+            <p>The dataset used to train and test the model collected information on various health related measures to monitor
+                "pregnant women mostly in a rural area of a developing country, with the help of 
+                wearable sensing enabled technology, which also notifies the pregnant women and 
+                her family about the health conditions is demonstrated."</p>
+            <table>
+                <tr align="left">
+                    <th>Data Characteristics</th>
+                    <th>Subject Area</th>
+                    <th>Associated Tasks</th>
+                </tr>
+                <tr align="left">
+                    <td>Multivariate</td>
+                    <td>Health and Medicine</td>
+                    <td>Classification</td>
+                </tr>
+                <tr align="left">
+                    <th>Feature Type</th>
+                    <th>Instances</th>
+                    <th>Features</th>
+                </tr>
+                <tr align="left">
+                    <td>Real, Integer</td>
+                    <td>1013</td>
+                    <td>6</td>
+                </tr>
+            </table>
+            <div class="link">
+                <a href=https://doi.org/10.24432/C5DP5D>Ahmed,Marzia. (2023). Maternal Health Risk. UCI Machine Learning Repository. https://doi.org/10.24432/C5DP5D.</a>
+            </div>
+
+                <h5>Trevor Beesley  </h5>
+
+        </div>
+
 </html>

@@ -14,18 +14,17 @@ body {
     text-align: center;
     font-family: 'Open sans', sans-serif;
     font-weight: bolder;
-    color: black;
 }
 
 .main h3 {
     padding-bottom: 20px;
-    color: black;
+    color: rgb(45, 91, 136);
 }
 
 .form {
     width: 300px;
     background-color: #A8A9AD;
-    color: #CCCCCC;
+    color: rgb(45, 91, 136);
     font-family: 'Open sans', sans-serif;
     font-weight: bolder;
 }
@@ -48,7 +47,7 @@ button {
 }
 
 
-ul {
+.navli {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -70,6 +69,41 @@ li a {
     font-weight: bolder;
 }
 
+p {
+    padding-top: 50px;
+    padding-bottom: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+th, td {
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.link {
+    padding-top: 25px;
+    padding-left: 50px;
+}
+
+.characteristics {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h5 {
+    color:rgb(45, 91, 136);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+    
 li a:hover {
     background-color: #CCCCCC;
 }
