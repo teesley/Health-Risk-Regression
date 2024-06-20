@@ -71,15 +71,19 @@ li a {
 
 p {
     padding-top: 50px;
-    padding-bottom: 75px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
 th, td {
+    padding-top: 25px;
     padding-bottom: 50px;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+table {
+    padding-top: 75px;
 }
 
 .link {
@@ -102,6 +106,17 @@ h5 {
     left: 0;
     padding-left: 10px;
     padding-bottom: 5px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+img {
+    padding-top: 35px;
 }
     
 li a:hover {
